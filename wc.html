@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Web Camera</title>
+
+  <!-- HTML -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="wc.css">
+</head>
+
+<body>
+  <div id="head"><p>Web Camera</p></div>
+
+<p id="intro">You can easily get Access to the web camera, by using the code below :</p>
+  <div id="pre">
+<pre id="pree">
+  &lt;!DOCTYPE html>
+ &lt;html lang="en">
+ &lt;head>
+   &lt;meta charset="UTF-8">
+   &lt;meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+
+   &lt;title>Web Cam&lt;/title>
+
+  <!-- HTML -->
+
+     &lt;script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"> &lt;/script>
+
+  <!-- Custom Styles --->
+   &lt;link rel="stylesheet" href="style.css">
+   &lt;style type="text/css" media="">
+    *{
+    margin: 0;
+    padding: 0;
+    }
+    video{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    }
+   &lt;/style>
+ &lt;/head>
+
+ &lt;body>
+ &lt;video id="webcam" autoplay playsinline width="640" height="480"> &lt;/video>
+ &lt;canvas id="canvas" class="d-none"> &lt;/canvas>
+   &lt;script src="main.js"> &lt;/script>
+   &lt;script type="text/javascript" charset="utf-8">
+    const webcamElement = document.getElementById('webcam');
+const canvasElement = document.getElementById('canvas');
+const webcam = new Webcam(webcamElement, 'user', canvasElement);
+webcam.start()
+
+
+
+
+   &lt;/script>
+ &lt;/body>
+ &lt;/html>
+</pre>
+</div>
+<div id="output">
+
+  <h2>Output</h2>
+  <video id="cam" autoplay playsinline> </video>
+  <canvas id="canvas1" class="done"> </canvas>
+    </div>
+<script src="wc.js"></script>
+</body>
+</html>

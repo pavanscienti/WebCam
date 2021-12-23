@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body {
+      font-size: 15pt;
+      height: 150vh;
+      width: 100%;
+  }
+  pre{
+    position: relative;
+    font-size: 2vh;
+  }
+  #pre{
+    width: 85vw;
+    height: 40vh;
+    background-color: #000000;
+    overflow: scroll;
+    position: absolute;
+    top: 26%;
+    color: #70E804;
+    left: 10%;
+    border-radius: 5%;
+  }
+  
+    ::-webkit-scrollbar{
+       width:3vh;
+       background-color:black;
+       border: 2px solid black;
+       background:#333;
+       height:2vh;
+      }
+  
+    ::-webkit-scrollbar-thumb{
+       width:3vh;
+       height: 3vh;
+      background: #A5A2A2;
+      }
+      #head{
+        width: 100%;
+        height: 10%;
+        position: absolute;
+        text-align: center;
+        background-color: #14FF56;
+        font-family: "Ubuntu", cursive;
+        font-size: 6vh;
+        box-shadow: 0px 2px 5px #61665F;
+        user-select: none;
+      }
+      #intro{
+        position: absolute;
+        top:13%;
+        left: 5%;
+        font-family: serif;
+        font-size: 3vh;
+        font-weight: 900;
+        user-select: none;
+      }
+      #cam{
+        height: 40%;
+        width: 90%;
+        position: absolute;
+        top: 90%;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      h2{
+        position: absolute;
+        top: 75vh;
+        font-size: 4vh;
+        font-family: serif;
+        left: 15%;
+        user-select: none;
+      }
+      #output{
+        height: 40vh;
+        width: 100%;
+       user-select: none;
+      }
+      h1{
+        position: absolute;
+        font-size: 3vh;
+        text-align: center;
+      }
+  
